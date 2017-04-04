@@ -21,7 +21,7 @@ class App extends Component {
       console.log(this.props.data.schools);
 
       schoolDisplay = this.props.data.schools.map( (school, index) => {
-        let mytext = school.schoolName + ' ' + school.medianScore + ' ' + school.top40;
+        let mytext = school.schoolName + ' ' + school.score;
         return (
           <School
             key={index}
