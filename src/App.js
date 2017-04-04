@@ -55,8 +55,7 @@ class App extends Component {
         </GoogleMapReact>
 
         <div className="explain">
-          <p>test....</p>
-
+          <p>Primary schools by score. Max 100</p>
         </div>
       </div>
     );
