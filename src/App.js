@@ -21,6 +21,8 @@ class App extends Component {
       console.log(this.props.data.schools);
 
       schoolDisplay = this.props.data.schools.map( (school, index) => {
+        let schoolName = school.schoolName.replace(' Victoria Australia', '');
+
         let mytext = school.schoolName + ' ' + school.score;
         return (
           <School
