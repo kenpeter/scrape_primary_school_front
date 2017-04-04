@@ -23,7 +23,7 @@ class App extends Component {
       schoolDisplay = this.props.data.schools.map( (school, index) => {
         let schoolName = school.schoolName.replace(' Victoria Australia', '');
 
-        let mytext = school.schoolName + ' ' + school.score;
+        let mytext = schoolName + ' ' + school.score;
         return (
           <School
             key={index}
