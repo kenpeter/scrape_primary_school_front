@@ -22,6 +22,10 @@ class App extends Component {
 
       schoolDisplay = this.props.data.schools.map( (school, index) => {
         let schoolName = school.schoolName.replace(' Victoria Australia', '');
+        // https://stackoverflow.com/questions/5217557/how-can-i-remove-chars-between-indexes-in-a-javascript-string
+        let myindex = schoolName.indexOf(',VIC');
+        let lastpart = schoolName.substr(myindex);
+        schoolName = schoolName.replace(lastpart, '');
 
         let mytext = schoolName + ' ' + school.score;
         return (
